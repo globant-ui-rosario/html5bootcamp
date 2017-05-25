@@ -1,0 +1,12 @@
+<div ng-repeat="movie in $ctrl.movies">
+	<a ng-link="['MovieDetail',{id: movie.id}]">{{movie.name}}</a>
+	<button ng-click="$ctrl.deleteMovie(movie)">Delete</button>
+</div>
+<br>
+<form ng-submit="$ctrl.newMovie()">
+	<label>New Movie</label> 
+	<p>Name of the Movie:  <input type="text" ng-model="$ctrl.Name"></p>
+	<p>Year:  <input type="text" ng-model="$ctrl.year"></p>
+	<p>Categories:  <input type="text" ng-model="$ctrl.categories"></p>
+	<button type="submit">AddMovie</button>
+</form>

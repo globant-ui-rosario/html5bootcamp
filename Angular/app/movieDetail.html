@@ -1,0 +1,10 @@
+<div ng-if="$ctrl.movie">
+	<h3>"{{$ctrl.movie.name}}"</h3> 
+	<h5>Year: "{{$ctrl.movie.year}}" </h5>
+	<h6>Categories: {{$ctrl.movie.categories}}</h6>
+	<div> 
+		<label>Edit Name: </label> 
+		<input ng-model="$ctrl.movie.name" placeholder="name"/> 
+	</div> 
+	<button ng-click="$ctrl.gotoMovies()">Back</button> 
+</div>

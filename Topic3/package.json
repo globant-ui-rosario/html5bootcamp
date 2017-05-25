@@ -1,0 +1,22 @@
+{
+  "name": "Topic3-1",
+  "version": "1.0.0",
+  "description": "Topic3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianPellitero/html5bootcamp.git"
+  },
+  "keywords": [
+    "topic3"
+  ],
+  "author": "SebastianPellitero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianPellitero/html5bootcamp/issues"
+  },
+  "homepage": "https://github.com/SebastianPellitero/html5bootcamp#readme"
+}

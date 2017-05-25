@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script type="text/javascript">
+  angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+</head>
+<body ng-app="app" ng-controller="Ctrl">
+  <app></app>
+  
+  <script src="https://npmcdn.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+  <script src="app.js"></script>
+  <script src="movies.js"></script>
+</body>
+</html>
