@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <form id="formSignUp">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <p>
+                <label>Nombre</label>
+                <input type="text" name="nombre" required />
+            </p>
+            <p>
+                <label>Apellido</label>
+                <input type="text" name="apellido" required />
+            </p>
+            <p>
+                <label>Email</label>
+                <input type="text" name="email" required />
+            </p>
+            <p>
+                <label>Cumpleaños</label>
+                <input type="date" name="bdate" />
+            </p>
+            <p>
+                <label>Deporte Favorito</label>
+                <select>
+                    <option value="tenis">Tenis</option>
+                    <option value="futbol">Futbol</option>
+                    <option value="basquet">Basquet</option>
+                    <option value="badminton">Badminton</option>
+                </select>
+            </p>
+            <p>
+                <label>Sobre ti...</label>
+            </p>
+            <p>
+                <textarea name="comment" rows="4" cols="50" form="formSignUp">Enter text here...</textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS</title>
+</head>
+
+<body>
+    <section id="section">
+        <h1>Section</h1>
+        <p>Hello World </p>
+    </section>
+    <button onclick="message()">Click me</button>
+</body>
+<script type="text/javascript">
+var section = document.getElementById('section');
+
+document.addEventListener('DOMContentLoaded', function() {
+    section.style.visibility = 'hidden';
+}, false);
+
+function message() {
+    alert('este es un mensaje')
+}
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://api.icndb.com/jokes/random');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        alert('respuesta' + xhr.responseText);
+    } else {
+        alert('Request failed.  Returned status of ' + xhr.status);
+    }
+};
+xhr.send();
+</script>
+
+</html>
