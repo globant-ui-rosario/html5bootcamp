@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My todo list</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		html{
+			padding: 0;
+			margin:0;
+		}
+		body{
+			padding: 0;
+			margin:0;
+			background-color: pink;
+			overflow-x: hidden;
+		}
+		header{
+			text-align: center;
+			width: 100%;
+			color: black;
+			padding: 20px;
+		}
+		h1{
+			font-size: 40px;
+			margin: 20px;
+		}
+		h2{
+			font-size: 25px;
+			margin: 30px 15px 15px 15px;
+		}
+		h3{
+			font-size: 20px;
+			margin: 20px 15px 15px 15px;
+		}
+		ul{
+			margin-top: 20px;
+		}
+		main{
+			width: 100%;
+		}
+		section{
+			/*display: flex;*/
+			display: inline-flex;
+			width: 100%;
+			background-color: lightgrey;
+		}
+		.desordenada{
+			text-align: center;
+			border: 1.5px solid white;
+			right: 0px;
+		}
+		.ordenada{
+			border: 1.5px solid white;
+			left: 0px;
+		}
+		footer{
+			width: 100%;
+			margin: 30px;
+			text-align: center;
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ejercicio</h1>
+	</header>
+	<main>
+		<section class="desordenada">
+			<h1>My todo list</h1>
+			<h2>Subtitulo</h2>
+			<ul>
+				<li><h3>Pendiente 1</h3></li>
+				<li><h3>Pendiente 2</h3></li>
+				<li><h3>Pendiente 3</h3></li>
+				<li><h3>Pendiente 4</h3></li>
+				<li><h3>Pendiente 5</h3></li>
+				<li><h3>Pendiente 6</h3></li>
+			</ul>
+		</section>
+		<section class="ordenada">
+			<h1>My todo list</h1>
+			<h2>Subtitulo</h2>
+			<ol>
+				<li><h3>Pendiente 1</h3></li>
+				<li><h3>Pendiente 2</h3></li>
+				<li><h3>Pendiente 3</h3></li>
+				<li><h3>Pendiente 4</h3></li>
+				<li><h3>Pendiente 5</h3></li>
+				<li><h3>Pendiente 6</h3></li>
+			</ol>
+		</section>
+	</main>
+	<footer>
+      <div>
+        <span>&copy; Sofía Aiello. 2018</span>
+      </div>
+      <div>
+        <a href="https://github.com/SOFYAIELLO1991/html5bootcamp">GitHub</a>
+      </div>
+	</footer>
+</body>
+</html>

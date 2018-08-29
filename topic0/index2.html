@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multimedia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		html{
+			padding: 0;
+			margin:0;
+		}
+		body{
+			padding: 0;
+			margin:0;
+			background-color: pink;
+			overflow-x: hidden;
+		}
+		header{
+			text-align: center;
+			width: 100%;
+			color: black;
+			padding: 20px;
+		}
+		h1{
+			font-size: 40px;
+			margin: 20px;
+		}
+		h2{
+			font-size: 25px;
+			margin: 30px 15px 15px 15px;
+		}
+		h3{
+			font-size: 20px;
+			margin: 20px 15px 15px 15px;
+		}
+		ul{
+			margin-top: 20px;
+		}
+		main{
+			width: 100%;
+		}
+		section{
+			/*display: flex;*/
+			display:inline-block;
+			width: 100%;
+			text-align: center;
+			background-color: lightgrey;
+		}
+		.online{
+			display:inline-block;
+			text-align: center;
+			right: 0px;
+		}
+		.local{
+			display:inline-block;
+			text-align: center;
+			left: 0px;
+		}
+		img,audio{
+			margin: 50px;
+		}
+		footer{
+			display:inline-block;
+			width: 100%;
+			margin: 30px;
+			text-align: center;
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<header><h1>Multimedia</h1></header>
+	<main>
+		<section>
+			<div class="online">
+				<img src="https://www.globant.com/themes/custom/globant_corp_theme/globant-light.svg" alt="Imagen Online">
+			</div>
+			<div class="local">
+				<img src="img/globant-light.svg" alt="Imagen Local">
+			</div>
+		</section>
+		<section>
+			<div class="online">
+				<iframe width="560" height="420" src="https://www.youtube.com/embed/oA5FAxbQvs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="local">
+				<video width="52%" height="420" controls>
+				  <source src="video/globant.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<section>
+			<audio controls autoplay>
+			  	<source src="audio/globant.mp3" type="audio/mpeg">
+			</audio>
+		</section>
+	</main>
+	<footer>
+	    <div>
+	        <span>&copy; Sofía Aiello. 2018</span>
+	    </div>
+	    <div>
+	        <a href="https://github.com/SOFYAIELLO1991/html5bootcamp">GitHub</a>
+	    </div>
+	</footer>
+</body>
+</html>
