@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Sing up form</title>
+</head>
+<body>
+	<h2>Sing up form</h2>
+	<form id="contact-form">
+		<input type="hidden" name="redirect" value="" />
+		<!--En este caso, en 'value=""'' va la pag a donde redirecciono al usuario una vez que completó el formulario-->
+		<ul>
+				<li>
+					<label for="firstname">First Name:</label>
+	  			<input type="text" placeholder="Grant" name="firstname" id="firstname" value="" required/>
+				</li>
+				<li>
+					<label for="mname">Middle Name:</label>
+	  			<input type="text" placeholder="Douglas" name="mname" id="mname" value="" />
+				</li>
+				<li>
+					<label for="lastname">Last Name:</label>
+	  			<input type="text" placeholder="Ward" name="lastname" id="lastname" value="" required/>
+				</li>
+				<li>
+					<label for="email">Email:</label>
+					<input type="email" placeholder="gward@maoshield.com" name="email" id="email" required/>
+				</li>
+				<li>
+					<label for="bday">Birthday:</label>
+					<input type="date" name="bday" id="bday" max="2000-08-29" min="1900-08-29" required/>
+				</li>
+				<li>
+					<label for="sport">Sport you practice:</label>
+					<select id="sport" required>
+						<optgroup>
+							<option>Baseball</option>
+							<option>Basketball</option>
+							<option>Cycling</option>
+							<option>Football</option>
+							<option>Running</option>
+							<option>Volleyball</option>
+							<option>Other</option>
+							<option>None</option>
+						</optgroup>
+					</select>
+					<ul>
+						<li>
+							<label for="other">Other:</label>
+							<input type="text" placeholder="Karate" name="other" id="other" value="">
+						</li>
+					</ul>
+				</li>
+				<li>
+					<label for="comments">Short Bio:</label>
+					<textarea name="comments" placeholder="Short description of yourself" id="comments" cols="25" rows="3"></textarea>
+				</li>
+				<li>
+	  			<input type="submit" value="Submit" />
+					<input type="reset" value="Reset" />
+				</li>
+		</ul>
+	</form>
+</body>
+</html>
