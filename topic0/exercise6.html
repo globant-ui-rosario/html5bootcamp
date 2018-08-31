@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise 6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h3>Exercise 5</h3>
+      <p>Form</p>
+    </header>
+    <form id="singUp">
+      <label >First Name</label>
+      <input type="text" name="fname" required="required" />
+      <br/>
+      <label>Last Name</label>
+      <input type="text" name="lname" required="required" />
+      <br/>
+      <label>Email</label>
+      <input type="email" name="mail" required="required"  />
+      <br/>
+      <label>Birthday</label>
+      <input type="date" name="birthday" required="required" />
+      <br/>
+      <p>Choose your favourite sport</p>
+      <select name="sport" required="required">
+        <option value="football">Football</option>
+        <option value="tennis">Tennis</option>
+        <option value="rugby">Rugby</option>
+        <option value="basketball">Basketball</option>
+      </select>
+      <p>Small bio</p>
+      <textarea name="bio" rows="4" cols="50" maxlength="250" required="required"></textarea>
+      <br/>
+      <br/>
+      <input type="submit" id="submit" value="Sign up"/>
+      <input type="reset" id="reset" value="Clear"/>
+    </form>
+  </body>
+</html>
