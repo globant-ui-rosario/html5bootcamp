@@ -1,0 +1,66 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{ 
+  font-size: 100%; 
+}
+
+@media (min-width: 40rem){ 
+  html { font-size: 112%;}
+}
+
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+
+body{
+  background-color: #fff;
+}
+
+.container{
+  margin: auto auto;
+  max-width: 48rem;
+  width: 90%;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.column.half { 
+  width: 50%; 
+}
+
+section{
+  text-align: center;
+}
+
+#section-2{
+  opacity: 0;
+  transition: opacity 10s;
+  -webkit-transition: opacity 10s;
+}
+
+#section-repositories{
+  text-align: left;
+}
