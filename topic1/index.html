@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise 1 CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="css/style-topic1.css">
+    <link rel="stylesheet" href="/node_modules/normalize.css">
+    
+    <script src="js/myJs.js"></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <div class="row clearfix">
+        <section class="section" id="section-2">
+          <h2>Hello World</h2>
+        </section>
+      </div>
+      <div class="column half">
+          <div class="row clearfix">
+            <h3>Random joke</h3>
+            <button type="button" onclick="getFetch()">Get Joke</button>
+          </div>
+          <div class="row clearfix">
+            <section class="section" id="section-response">
+              <p id="p-response"></p>
+            </section>
+          </div>
+          <div class="row clearfix">
+            <button type="button" onclick="takesMatrix(matrix)">Test Matrix</button>
+          </div>
+      </div>
+      <div class="column half">
+          <div class="row clearfix">
+            <h3>List of repositories</h3>
+            <label for="repo-query">Text to search:</label>
+            <input type="text" id="repo-query" />
+            <button type="button" onclick="getRepositories()">Search</button>
+          </div>
+          <div class="row clearfix">
+            <section id="section-repositories">
+              <ul id="repo-list"></ul>
+            </section>
+          </div>
+      </div> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercises topic 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+
+    <script src="js/jsTopic4.js"></script>
+    <script src="js/jsTopic4WebSocket.js"></script>
+
+    <link rel="stylesheet" href="css/style-topic4.css">
+
+  </head>
+  
+  <body id="body">
+    <div class="container">
+      <div class="row clearfix">
+          <div class="column half">
+              <div class="row clearfix">
+                <h3>Writer here</h3>
+                <textarea id="text-area-lg" class ="textArea"></textarea>
+              </div> 
+              <div class="row clearfix">
+                <button id = "button-save-lg" type="button" onclick="saveTextLG()">Save LocalStorage</button>
+                <button id = "button-clear-lg" type="button" onclick="deleteTextLG()">Clear LocalStorage</button>
+              </div>
+          </div>
+          <div class="column half">
+            <div class="row clearfix">
+              <h3>Writer here</h3>
+              <textarea id="text-area-idb" class ="textArea"></textarea>
+            </div>
+            <div class="row clearfix">
+              <button id = "button-save-idb" type="button" onclick="saveTextIDB()">Save IndexedDB</button>
+              <button id = "button-clear-idb" type="button" onclick="deleteTextIDB()">Clear IndexedDB</button>
+            </div>
+          </div>
+      </div>
+      <div class="row clearfix">
+        <div class="column half" id="web-sockets">
+          <div class="row clearfix">
+            <h3>Test Web Sockets</h3>
+            <input id="message"/>
+          </div>
+          <div class="row clearfix">
+            <button id = "button-message" type="button" onclick="sendMessage()">Send Message</button>
+            <div id="output"></div>
+          </div>
+        </div>
+        <div class="column half">
+          <h3>Drag and Drop</h3>
+          <div id="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" ondragover="dragOverHandler(event);">
+            <p>Drop a file here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

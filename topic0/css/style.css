@@ -1,0 +1,91 @@
+header, footer, aside, nav{
+  background-color: gainsboro; 
+}
+
+html body.newWeight#weight{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+  text-align: center;
+}
+
+.header{
+  font-size: 46px;
+  text-align: center;
+}
+
+.footer{
+  font-size: 10px;
+  text-align: center;
+  height: 48px;
+}
+
+.content{
+  font-size: 14px,;
+  text-align: center;
+  display: inline-block;
+  width: 59%;
+  height: 500px;
+  vertical-align: -webkit-baseline-middle;
+  border-style: solid;
+  border-color: black;
+}
+
+.navigation{
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  width: 19%;
+  height: 500px;
+  vertical-align: -webkit-baseline-middle;
+  border-style: solid;
+  border-color: black;
+}
+
+.sidebar{
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 19%;
+  height: 500px;
+  vertical-align: -webkit-baseline-middle;
+  border-style: solid;
+  border-color: black;
+}
+
+*[class$="r"]{
+  background-color: magenta;
+}
+
+*[class*="a"]:not([class$="r"]){
+  background-color: blue;
+}
+
+html{
+  font-size: 14px !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#green-class{
+  background-color: green;
+}
+div #oh-no-inline-styles .oh-no-inline-styles{
+  background-color: green;
+}
+
+#main-header {
+  display: block;
+  border: 1px;
+}
+
+#main-footer{
+  display: block;
+  border: 1px;
+  height: 50px;
+}
+
+.article{
+  background: gainsboro;
+  height: 400px;
+}
